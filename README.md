@@ -1,10 +1,12 @@
 # PromptStudio
 
+**[Windows için PromptStudio 0.7.2’yi indir (.exe)](https://github.com/emrhn034/PromptStudio/releases/download/v0.7.2/PromptStudio.Setup.0.7.2.exe)** · [En yeni sürüm](https://github.com/emrhn034/PromptStudio/releases/latest)
+
 ![PromptStudio: YouTube içerik üreticileri için Windows stüdyosu](docs/media/promptstudio-hero.png)
 
 **YouTube kapağını, video başlığını, açıklamasını ve etiketlerini tek yerden hazırla.** PromptStudio, içerik üreticileri için Türkçe bir Windows uygulamasıdır. Bir video konusu yazabilir, kendi görsellerini referans olarak ekleyebilir ve beğendiğin kapak stilini sonraki videolarında tekrar kullanabilirsin.
 
-**[Windows için PromptStudio’yu indir](https://github.com/emrhn034/PromptStudio/releases/latest)** · [Ayrıntılı kullanım kılavuzu](PromptStudio/README_TR.md)
+[Ayrıntılı kullanım kılavuzu](PromptStudio/README_TR.md)
 
 ## Bir videodan örnek
 
@@ -40,6 +42,12 @@ Aynı projeden YouTube Studio’ya taşıyabileceğin bir paket çıkar:
 **YouTube hesabı gerekli mi?** Kapak ve metin hazırlamak için gerekmez. Kanalını bağlarsan performans verilerini inceleyebilir ve analizden yeni bir proje taslağı açabilirsin.
 
 **Uygulama ücretli mi?** PromptStudio ücretsizdir. Yapay zekâ kullanımında, seçtiğin hesabın veya API sağlayıcısının ücret ve kullanım limitleri geçerlidir.
+
+## Katkıda bulun
+
+- Bir hata bulduysan veya özellik önermek istiyorsan [Issues](https://github.com/emrhn034/PromptStudio/issues) bölümünde bir konu aç.
+- Kod katkısı için depoyu kendi hesabına **fork** et, değişikliklerini kendi kopyanda bir dala gönder ve bu deponun `main` dalına bir [Pull Request (PR)](https://github.com/emrhn034/PromptStudio/pulls) aç. Neyi değiştirdiğini ve nasıl denediğini yaz.
+- Proje sahibi PR’ı inceler, gerekirse düzeltme ister ve uygun bulursa birleştirir. Kullanıcılara güncelleme sunmak için ayrıca yeni bir Windows sürümü yayımlanır.
 
 ## Geliştirme
 
