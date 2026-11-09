@@ -6,25 +6,40 @@
 
 **[Windows için PromptStudio’yu indir](https://github.com/emrhn034/PromptStudio/releases/latest)** · [Ayrıntılı kullanım kılavuzu](PromptStudio/README_TR.md)
 
-## İlk projen
+## Bir videodan örnek
 
-1. PromptStudio’yu kur ve **ChatGPT ile giriş yap** seçeneğini kullan. Bu bağlantı için bilgisayarında [Codex CLI](https://developers.openai.com/codex/cli) kurulu olmalı. İstersen ayarlardan API anahtarıyla da bağlanabilirsin.
-2. **Kapak ve metin hazırla** ekranında video konunu yaz. İstersen bir yüz, ürün veya stil örneği ekle ve her görselin nasıl kullanılacağını belirt.
-3. Kapak, başlık, açıklama ve etiketleri oluştur. Metinleri kopyala, kapağı PNG olarak kaydet. İstersen kapağın yazısını ve logosunu editörde düzenle.
+Diyelim ki **“Karlı bir dağ evinde 24 saat geçirdim”** videosunu hazırlıyorsun. Konuyu bir cümleyle yaz. Kapak için kendi portreni, dağ evinin fotoğrafını ve sırt çantanın görselini ekle. İstersen her birine “beni ön plana al”, “evi arka planda göster” gibi bir not düş.
 
-![Örnek iş akışı: portre, dağ evi ve sırt çantası referanslarından tek bir YouTube kapağına](docs/media/referanstan-kapaga.png)
+![Solda portre, dağ evi ve çanta referansları; sağda bu üç öğeyi birleştiren örnek YouTube kapağı](docs/media/referanstan-kapaga.png)
 
-*İllüstrasyon: referans görsellerinin bir kapak fikrinde nasıl birleşebileceğine örnek.*
+Aynı projeden YouTube Studio’ya taşıyabileceğin bir paket çıkar:
 
-## Serinin görünümünü tekrar kullan
+| Hazırlanan | Örnek sonuç |
+| --- | --- |
+| **Kapak** | Önde sen ve sırt çantan, arkada karlı dağ evi. Görseli PNG olarak kaydedebilirsin. |
+| **Video başlığı** | Karlı Dağ Evinde 24 Saat: Gece Nasıl Geçti? |
+| **Açıklama** | Bu videoda karlı bir dağ evinde geçirdiğim 24 saati, yanıma aldıklarımı ve gecenin nasıl geçtiğini paylaşıyorum. |
+| **Etiketler** | karlı dağ evi, kış vlogu, dağda 24 saat, doğa vlogu |
 
-Kendi koleksiyonlarını oluştur, görselleri kullanım notlarıyla kütüphaneye kaydet ve seri şablonuyla aynı referansları, logoyu ve kapak stilini yeni projeye taşı. Taslakların bilgisayarında kalır; projeni açıp kaldığın adımdan devam edebilirsin.
+*Görsel ve metinler, iş akışını göstermek için hazırlanmış örneklerdir.*
 
-![PromptStudio Windows uygulamasında kapak referansları ve elle düzenleme seçenekleri](docs/media/kapak-studyosu.png)
+## Windows’ta ilk projeni hazırla
 
-*PromptStudio’dan gerçek ekran görüntüsü: referans ekleme, kapak üretme ve elle düzenleme.*
+1. **[Kurulum paketini indir](https://github.com/emrhn034/PromptStudio/releases/latest).** GitHub Releases sayfasında **Assets** bölümündeki `PromptStudio.Setup…exe` dosyasını aç.
+2. **ChatGPT hesabını bağla.** PromptStudio’daki **ChatGPT ile giriş yap** seçeneği [Codex CLI](https://developers.openai.com/codex/cli) kullanır. Ayrıntılı stüdyoda desteklenen sağlayıcılara kendi API anahtarınla da bağlanabilirsin.
+3. **Kapak ve metin hazırla.** Konuyu yaz, istersen görsel ekle ve **Kapak ve metin oluştur** düğmesine bas. Sonucu kontrol et, metinleri kopyala ve kapağı kaydet. Kapak yazısını veya logoyu istersen editörde düzenle.
 
-Kapak ve metin hazırlamak için YouTube hesabını bağlaman gerekmez. Kanalını isteğe bağlı bağlayarak performans verilerini inceleyebilir ve analizden yeni bir proje taslağı açabilirsin. Uygulama ücretsizdir; yapay zekâ kullanımı, seçtiğin hesabın veya API sağlayıcısının ücret ve limitlerine tabidir.
+![PromptStudio hızlı üretim ekranında video konusu, seri şablonu, referans görseller ve Kapak ve metin oluştur düğmesi](docs/media/hizli-uretim.png)
+
+*Gerçek uygulama ekranı: video konusunu yaz, referanslarını seç ve üretimi başlat.*
+
+## Bir sonraki bölümde baştan başlama
+
+Örneğin **Kış Vlogları** adında bir seri şablonu oluştur. Referanslarını kullanım notlarıyla kütüphaneye kaydet; yeni bölümde şablonu seçip logonu, görsellerini ve kapak stilini yeniden kullan. Konuyu değiştirerek yeni bir paket hazırlayabilir, yarım kalan projeyi daha sonra açıp devam edebilirsin.
+
+**YouTube hesabı gerekli mi?** Kapak ve metin hazırlamak için gerekmez. Kanalını bağlarsan performans verilerini inceleyebilir ve analizden yeni bir proje taslağı açabilirsin.
+
+**Uygulama ücretli mi?** PromptStudio ücretsizdir. Yapay zekâ kullanımında, seçtiğin hesabın veya API sağlayıcısının ücret ve kullanım limitleri geçerlidir.
 
 ## Geliştirme
 
