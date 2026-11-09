@@ -1,0 +1,12 @@
+const { spawn } = require('node:child_process');
+const path = require('node:path');
+const fs = require('node:fs');
+const dir = path.resolve(__dirname, '../test-results', `desktop-${Date.now()}`);
+fs.mkdirSync(dir, { recursive: true });
+const env = { ...process.env, PROMPTSTUDIO_DATA_DIR: dir, PROMPTSTUDIO_SMOKE: '1' };
+delete env.ELECTRON_RUN_AS_NODE;
+console.log(`Test artifacts: ${dir}`);
+const p = spawn(require('electron'), [path.resolve(__dirname, '..')], { env, stdio: ['ignore', 'pipe', 'pipe'], windowsHide: true });
+for (const stream of [p.stdout, p.stderr]) stream.on('data', chunk => { process.stdout.write(chunk); fs.appendFileSync(path.join(dir, 'runtime.log'), chunk); });
+const timer = setTimeout(() => { p.kill(); console.error('Desktop test timed out.'); process.exitCode = 1; }, 90000);
+p.on('exit', code => { clearTimeout(timer); const file = path.join(dir, 'smoke.json'); if (fs.existsSync(file)) console.log(fs.readFileSync(file, 'utf8')); process.exitCode = code || (fs.existsSync(file) ? 0 : 1); });

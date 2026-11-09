@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' studio: data: blob:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>PromptStudio — İçeriğin bir adım önde.</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#home"><img class="brand-icon" src="icon.png" width="40" height="40" alt=""><span>Prompt<span class="brand-light">Studio</span><small>İÇERİK ÜRETİCİLERİ İÇİN</small></span></a>
+    <button class="button primary new-project" data-action="new-project"><span>＋</span> Yeni içerik oluştur <kbd> N </kbd></button>
+    <div class="nav-label">ÇALIŞMA ALANI</div>
+    <nav id="navigation"></nav>
+    <div class="sidebar-line"></div>
+    <div class="nav-label collection-label">KOLEKSİYONLAR <button class="icon-button" data-action="new-folder" title="Koleksiyon ekle">＋</button></div>
+    <div id="folder-nav" class="folder-nav"></div>
+    <div class="sidebar-bottom"><div class="local-card"><span class="local-dot"></span><div>Senin alanın, senin içeriklerin.<small>Projelerin bu bilgisayarda saklanır.</small></div></div><button class="nav-item" data-route="settings"><span class="nav-icon" data-icon="settings"></span> Ayarlar <span class="version">v0.2</span></button><div class="user-row"><span class="avatar">S</span><div>Senin stüdyon<small>Bağımsız üretici</small></div><button class="icon-button" data-action="theme" title="Temayı değiştir">◐</button></div></div>
+  </aside>
+  <div class="main-shell"><header class="topbar"><div id="breadcrumb">Çalışma alanı <span>/</span> Genel bakış</div><div class="topbar-right"><span class="local-status"><span class="local-dot"></span> Yerel çalışma alanı</span><button class="icon-button" data-action="theme" title="Temayı değiştir">◐</button></div></header><main id="content"></main><footer>Üretmeye odaklan. Gerisini stüdyona bırak.<span>PromptStudio <span class="footer-star">✦</span></span></footer></div>
+  <dialog id="modal"><div id="modal-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
